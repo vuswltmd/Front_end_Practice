@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #e50914;
+}
+
+/* root 가상 클래스, :root 선택자는 웹 문서 구조에서 가장 상위요소를 선택할 때 사용한다. */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #000;
+    color: #999;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    /* html기본이 16px이므로 0.5rem은 8px이다. */
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.showcase {
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background: url('../img/background.jpg') no-repeat center center/cover
+}
+
+.showcase-top {
+    position: relative;
+    height: 90px;
+}
+
+.showcase-top img {
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-top a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
